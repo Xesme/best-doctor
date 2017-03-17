@@ -16,10 +16,11 @@
         <form id="search-form" class="form-group">
           <label for="ailment">Enter a condition:</label>
           <input class="form-control" id="ailment" type="text" name="ailment">
-          <label for="speciality">Enter a specialist</label>
+          <h5>OR</h5>
+          <label for="speciality">Enter a specialists field:</label>
           <input class="form-control" id="speciality" type="text" name="speciality">
           <label>Location:</label>
-          <select class="form-control" id="location">
+          <select class="form-control" id="location" required>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -70,6 +71,12 @@
             <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
+          </select>
+          <label for="gender">Preferred gender:</label>
+          <select class="form-control" id="gender">
+            <option></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
           </select>
           <br>
           <button class="btn btn-success" type="submit">Search!</button>
