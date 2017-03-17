@@ -1,16 +1,14 @@
-// var apiKey = require('./.env').apiKey;
-var Doctor = require('./../js/doctor.js').Doctor;
-
-$(document).ready(function(){
-  var availableDoctor = new Doctor();
-  $('#search-from').submit(function(event) {
-    event.preventDefault();
-    var ailment = $('#ailment').val();
-    var specialty = $('#specialty').val();
-    var location = $('#location').val();
-    var gender = $('#gender').val();
-    console.log(ailment);
-    var results = availableDoctor.searchDoctor(ailment, specialty, location, gender);
-    // $('#results').append("<li>" + results + "</li>");
-  });
-});
+// var Doctor = require('./../js/doctor.js').doctorModule;
+//
+// $(document).ready(function(){
+//   $('#search-form').submit(function(event){
+//     event.preventDefault();
+//     var ailment = $('#ailment').val();
+//     var specialty = $('#specialty').val();
+//     var location = $('#location').val();
+//     var gender = $('#gender').val();
+//     var newDoctor = new Doctor();
+//     newDoctor.searchDoctor(ailment);
+//     $('#results').text('submit');
+//     });
+// });
